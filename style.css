@@ -1,0 +1,38 @@
+body {
+  margin:0;
+}
+
+body .sidebar {
+  background-color: cadetblue;
+  width:300px;
+  height:100vh;
+  position: absolute;
+  left:-300px;
+  transition:5s ease-in-out;
+}
+
+.sidebar.cajou {        /* classe perso */
+  left:0;
+}
+
+.sidebar .toggle-btn {
+  width:40px;
+  height:40px;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+  align-items: center;
+  position:absolute;
+  left:300px;
+  transition: 5s ease-in-out;
+}
+
+.toggle-btn.gigi {           /* classe perso */
+  transform:rotateZ(90deg);
+}
+
+.sidebar .toggle-btn span {
+  width:30px;
+  height:4px;
+  background-color: rgb(255, 140, 0);
+}
